@@ -12,7 +12,7 @@ st.set_page_config(page_title="AppShadow", layout="wide")
 # --- 1. CARGA DE MODELO ---
 @st.cache_resource
 def load_model():
-    return whisper.load_model("base")
+    return whisper.load_model("tiny")
 
 model = load_model()
 
