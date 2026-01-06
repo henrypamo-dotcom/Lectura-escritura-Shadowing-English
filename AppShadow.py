@@ -89,7 +89,7 @@ if ruta_audio_final and st.button("🚀 Iniciar Shadowing"):
     
     with st.spinner("Analizando audio con IA..."):
         # Transcribir usando la ruta definida arriba
-        result = model.transcribe(ruta_audio_final, word_timestamps=True)
+        result = model.transcribe(ruta_audio_final, word_timestamps=True, fp16=False)
         
         # Preparar JSON
         word_data = []
